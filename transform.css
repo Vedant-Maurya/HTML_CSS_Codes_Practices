@@ -1,0 +1,147 @@
+  /* this is the write the css properties in there tutorials .....TRANSFORM-2D &.TRANSFORM-3D
+       .....TRANSFORM-2D = Its is basically turn the image of the transform .....TRANSFORM-2D
+       2..translateX{x}
+       3..translateY{y}
+       ......................
+       4..scale{x,y}
+       5..scaleX{x}
+       6..scaleY{y}
+       1..translate{x,y}
+            ......................
+            7..skew{x,y}
+            8..skewX{x}
+            9..skewY{y}
+            ....................
+            10..Rotate{angle}
+            11..matrix (n,n,n,n,n,n,)
+            12..None
+    
+   TRANSLATE= Translate method moves an element from its current position,,,according to the X-AXIS & Y-AXIS.....
+   TRANSLATE X{x}= translate X-AXIS method is increase and decrease the WIDTH of an element 
+   TRANSLATE Y{y}= translate Y-AXIS method is increase and decrease the height of an element
+   SCALE{X,Y}=The scale method increas and decrease the size of ad element according to the WIDTH & HEIGHT 
+   SCALE X{x}=the scale x method increase and decrease the width of an element 
+   SCALE Y{y}=the scale y method increase and decreas the height of an element 
+   SKEW{X,Y}=The skew method skew an element along the X-AXIS & Y-AXIS.....by given the ANGLES...
+   SKEW X{x}=the skew method skew an element aong the X-AXIS by given the angle....
+   SKEW Y{y}=the skew method skews an element along the Y-AXIS by given the angle......
+
+   
+                           this is the start of the 3D transform tutorials of the next line .............................
+    the transform-3D in this tutorials....and the transform is basically transform-3D 
+                    TRANSFORM-3D...........
+            
+            1..ROTATE X(ANGLE)
+            2..ROTATE Y(ANGLE)
+            3..ROTATE Z(ANGLE)
+            4..ROTATE 3D(X,Y,Z,ANGLE)
+            ..............................
+            5..TRANSLATE Z(z)
+            6..TRANSLATE 3D(X,Y,Z,ANGLE)
+            .............................
+            7..SCALE 3D(X,Y,Z)
+            8..SCALE Z(z)
+            9..MATRIX 3D(n,n,n,n,....16..)
+            10...PRESPECTIVE (n)
+            11..TRANSFORM-ORIGIN
+            12..TRANSFORM-STYLE...
+
+        TRANSFORM-STYLE=The transform-style property specifies how nested element are rendered in 3D white-space
+         
+     IMPORTANT= TRANSLATE =PX & DEGREE [[ DEGREE property is also used ]]              {(5deg)} 
+                ROTATE   =DEGREE          {(5deg)} 
+                SCALE =(MULTIPLY *)WIDTH & HEIGHT 
+                SKEW  =DEGREE            {(4deg)}          */
+
+                body{
+                    margin:100px;
+                    padding:100px;
+
+                  }
+         
+         #div1{
+            border: 2px red solid;
+            height: 200px;
+            width: 200px;
+            background-color:khaki;
+            
+            margin: 40px;
+            padding: 40px;
+            display: inline; 
+            
+            transform: scale(2,3);
+            
+          
+         }
+         #div2{
+            border: 2px red solid;
+            height: 200px;
+            width: 200px;
+            background-color:khaki;
+            margin: 40px;
+            padding: 40px;
+           display: inline;
+          
+         }
+         #div3{
+            border: 2px red solid;
+            height: 200px;
+            width: 200px;
+            background-color:khaki;
+            margin: 40px;
+            padding: 40px;
+           
+             display: inline;
+         }
+         #div4{
+            border: 2px red solid;
+            height: 200px;
+            width: 200px;
+            background-color:khaki;
+            margin: 40px;
+            padding: 40px;
+            display: inline;
+           
+           
+         }
+         #div5{
+            border: 2px red solid;
+            height: 200px;
+            width: 200px;
+            background-color:khaki;
+            margin: 40px;
+            padding: 40px;
+            display: inline;
+           
+             
+         }
+         #div6{
+            border: 2px red solid;
+            height: 200px;
+            width: 200px;
+            background-color:khaki;
+            margin: 40px;
+            padding: 40px;
+            display: inline;
+           
+            
+         }
+         p{
+            border: 4px solid blue;
+            height: 60px;
+            width: 70px;
+            display: flex;
+            flex-direction:column-reverse;
+            /* transform: scale(2); */
+            /* transform: rotate(30deg); */
+            /* transform: skew(4px,5px); */
+            /* transform: skewX(28deg); */
+            /* transform: skew(30deg,40deg);
+              transform: skewY(8deg); */
+              translate: 3D ;
+   
+           transform: translateX( 50);
+
+         }
+          
+         

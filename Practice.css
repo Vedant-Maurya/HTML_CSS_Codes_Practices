@@ -1,0 +1,452 @@
+/* 
+________________________-----------____________________________________________--------------______________________________________-------________________________-----------____________________________________________--------------______________________________________-------
+body {
+    margin: 5px;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+
+
+}
+
+
+.header {
+    border: 5px red solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 18px;
+    padding-left: 20px;
+    text-align: center;
+    font-size: larger;
+    font-style: italic;
+    text-transform: uppercase;
+    height: 600px;
+    background-color: rgb(220, 243, 14);
+    color: red;
+    font-weight: bolder;
+
+    outline-offset: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+
+
+}
+
+span {
+    display: contents;
+}
+
+#img1 {
+    float: right;
+    height: 150px;
+    width: 150px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 15px;
+    animation-name: img;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 5;
+
+
+
+
+
+}
+
+@keyframes img {
+    0% {
+        width: 10px;
+        height: 20px;
+        background-color: aquamarine;
+        color: bisque;
+    }
+
+    10% {
+        width: 20px;
+        height: 30px;
+        border: 5px red solid;
+    }
+
+    50% {
+        width: 50px;
+        height: 60px;
+        border: 8px blue inset;
+        transform: rotateY(90deg);
+    }
+
+    100% {
+        width: 70px;
+        height: 80px;
+        border: 10px brown inset;
+        transform: rotateY(-92deg);
+    }
+}
+
+#div1 {
+    border: 4px inset maroon;
+    border-radius: 60px;
+    height: 150px;
+    width: 200px;
+    margin-right: 7px;
+    margin-top: 7px;
+    background-color: teal;
+    align-self: flex-end;
+    animation-name: vedant;
+    animation-duration: 3s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+
+
+
+}
+
+@keyframes vedant {
+    0% {
+        width: 50px;
+        height: 50px;
+        border-radius: 90px;
+        font-size: small;
+        background-color: green;
+        transform: rotate(-360deg);
+    }
+
+    10% {
+        width: 70px;
+        height: 70px;
+        border-radius: 95px;
+        font-size: smaller;
+        transform: rotate(60deg);
+    }
+
+    30% {
+        width: 100px;
+        height: 100px;
+        border-radius: 60px;
+        transform: rotate(-360deg);
+    }
+
+    55% {
+        width: 120px;
+        height: 120px;
+        border-radius: 62px;
+        transform: rotate(-360deg);
+    }
+
+    65% {
+        width: 130px;
+        height: 130px;
+        border-radius: 64px;
+        background-color: aquamarine;
+        transform: rotate(-360deg);
+    }
+
+    75% {
+        width: 150px;
+        height: 150px;
+        border-radius: 65px;
+        background-color: aqua;
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        width: 200px;
+        height: 200px;
+        border-radius: 70px;
+        background-color: mediumslateblue;
+        text-transform: lowercase;
+        text-decoration: underline;
+        transform: rotate(-360deg);
+    }
+
+}
+
+#div2 {
+    border: 4px inset rgb(99, 9, 245);
+    border-radius: 60px;
+    height: 150px;
+    width: 200px;
+    margin-right: 7px;
+    margin-top: 7px;
+    align-self: flex-start;
+    animation-name: sammer;
+    animation-duration: 7s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 6;
+
+}
+
+@keyframes sammer {
+    0% {
+        width: 50px;
+        height: 50px;
+        border-radius: 90px;
+        font-size: small;
+        background-color: green;
+        transform: rotate(-360deg);
+    }
+
+    10% {
+        width: 70px;
+        height: 70px;
+        border-radius: 95px;
+        font-size: smaller;
+        transform: rotate(60deg);
+    }
+
+    30% {
+        width: 100px;
+        height: 100px;
+        border-radius: 60px;
+        transform: rotate(-360deg);
+    }
+
+    55% {
+        width: 120px;
+        height: 120px;
+        border-radius: 62px;
+        transform: rotate(-360deg);
+    }
+
+    65% {
+        width: 130px;
+        height: 130px;
+        border-radius: 64px;
+        background-color: aquamarine;
+        transform: rotate(-360deg);
+    }
+
+    75% {
+        width: 150px;
+        height: 150px;
+        border-radius: 65px;
+        background-color: aqua;
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        width: 200px;
+        height: 200px;
+        border-radius: 70px;
+        background-color: mediumslateblue;
+        text-transform: lowercase;
+        text-decoration: underline;
+        transform: rotate(-360deg);
+    }
+
+}
+
+#div3 {
+    border: 4px inset rgba(231, 8, 8, 0.616);
+    border-radius: 60px;
+    height: 150px;
+    width: 200px;
+    background-color: springgreen;
+    margin-right: 7px;
+    margin-top: 7px;
+    align-self: flex-end;
+    transition: width height background;
+    transition-duration: 5s;
+     
+
+}
+
+#div3:hover {
+    width: 50px;
+    height: 50px;
+    background-color: bisque;
+    font-size: xx-small;
+    font-style: italic;
+
+}
+
+#div4 {
+    border: 4px inset rgba(17, 3, 216, 0.74);
+    border-radius: 60px;
+    height: 150px;
+    width: 200px;
+    margin-right: 7px;
+    margin-top: 7px;
+    align-self: flex-start;
+}
+
+#div5 {
+    border: 4px inset rgb(102, 4, 4);
+    border-radius: 60px;
+    height: 150px;
+    width: 200px;
+    margin-right: 7px;
+    margin-top: 7px;
+    align-self: flex-end;
+}
+_...._NOTE=use the value of the css grid unit in the {rem,%,vh(view height,)vw(view width),} and the {px}also..and the (fr=fraction)
+.........._________-----------____________________________________________--------------______________________________________-------
+________________________-----------____________________________________________--------------______________________________________------- */
+
+.container {
+    border: 4px red solid;
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+    padding-left: 4rem;
+    display: grid;
+    row-gap: 7rem;
+    column-gap: 10rem;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(4, 3fr);
+
+    /* .......................... aur used this value ................. */
+    /* grid-template-columns: 100px 100px 100px;
+   grid-template-rows: 100px 100px 100px; */
+
+}
+
+
+.item1 {
+    border: 3px maroon inset;
+    border-radius: 8px;
+    background-color: bisque;
+    /* height:15vh;
+    width: 10vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+
+
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item2 {
+    border: 3px maroon inset;
+    border-radius: 8px;
+    background-color: rgb(73, 214, 17);
+    /* height:15vh;
+    width: 10vw; */
+
+
+}
+
+.item3 {
+    border: 3px maroon inset;
+    border-radius: 8px;
+    background-color: rgb(13, 126, 41);
+    /* height:15vh;
+    width: 10vw; */
+
+
+}
+
+.item4 {
+    border: 3px maroon inset;
+    border-radius: 8px;
+    background-color: rgb(34, 17, 187);
+    height: 15rem;
+    width: 15rem;
+}
+
+.item5 {
+    border: 3px maroon inset;
+    border-radius: 8px;
+    background-color: rgb(240, 2, 2);
+    height: 15rem;
+    width: 15rem;
+
+}
+
+.item6 {
+    border: 3px maroon inset;
+    border-radius: 8px;
+    background-color: rgb(8, 80, 12);
+    /* height:15vh;
+    width: 10vw;
+     */
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.Sidebar {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.content1 {
+    grid-column-start: 2;
+
+    grid-column-end: 4;
+
+
+}
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container12 {
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    padding: 4rem;
+    row-gap: 4rem;
+    column-gap: 3rem;
+    grid-template-columns:repeat(3, 1fr)  ;
+    grid-template-rows: repeat(3, 1fr);
+
+
+}
+
+.item11 {
+    background-color: rgb(0, 255, 234);
+    border: 5px solid black;
+  
+grid-row-start: 1;
+grid-row-end: 3;
+height: 46px;
+
+}
+
+.item12 {
+    background-color: blue;
+    border: 5px solid black;
+}
+
+.item13 {
+    background-color: blue;
+    border: 5px solid black;
+}
+
+.item14 {
+    background-color: blue;
+    border: 5px solid black;
+}
+
+.item15 {
+    background-color: blue;
+    border: 5px solid rgb(15, 233, 26);
+}
+
+.item16 {
+    background-color: rgb(255, 208, 0);
+    border: 5px solid black;
+}

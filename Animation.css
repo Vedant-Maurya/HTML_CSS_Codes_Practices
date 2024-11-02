@@ -1,0 +1,168 @@
+      /* this is the animation tutorials in the css and animation is basically used of to (animinate the image) with rounder and any types
+                                 ANIMATION TUTORIALS.........
+            1..Animation-Name
+            2..Animation-Duration
+            3..Animation-timing-function
+            4..Animation-Delay
+            5..Animation-Iteration-Count
+            6..Animation-Direction
+            7..Animation-Fill-Mode
+            8..Animation-play-state
+            9..Animation            {shorthand of the all }
+
+        AND Animation property is used the with the help of the this property...................
+           @keyframes animation-name{
+                    from{         }          .......(from means animation kha se chalega) and isme property likhna hai jo chaiye..........
+                    to  {         }          .......( to means animation kha tak chalega) and isme property likhna hai jo chaiye.......
+           }
+            and the second is related to thisyou using any types
+            @keyframes animation-name{
+                    0%{       }          (0% means animation starting mai kaise chalega) and isme property likhna hai jo chaiye..........
+                    10%{      }             (10% means animation 10% pe kaisa  chalega)  and isme property likhna hai jo chaiye..........
+                    25%{       }                           (       ,,same as it       )  and isme property likhna hai jo chaiye..........
+                    50%{       }                           (       ,,same as it        ) and isme property likhna hai jo chaiye..........
+                    75%{       }                           (       ,,same as it        ) and isme property likhna hai jo chaiye..........
+                    100%{      }                           (       ,,same as it        ) and isme property likhna hai jo chaiye..........
+            }
+             
+            1...Animation-name= isme animation ka name likhna hai jo chaiye jo (@keyframes ,,,,animation-name) mai lilkhna
+            2.. Animation-Duration= isme animation ka duration likhna hai means animation kitna time tak chlega (2s,3s) any time
+            3..Animation-timing-function= isme animation ko timeing dena hai kaise chalega (and its value are available)
+                  value of animation-timing-function..........
+                    {unit}                                               {description}
+                    1..ease                         slow start ,then fast,then &slowly
+                    2..linear                       same speed from start to end
+                    3..ease-in                      slow start
+                    4..ease-out                       slow end
+                    5..ease-in-out                    slow start & end
+                    6..step-start                     equivalent to step (1,start)
+                    7..step-end                       equivalent to step (1,end)
+                    8..steps (#,start/end)             you defines any types of the value
+                    9..cubic-bezier   
+       ___________________________________________________________________________________________________________________\
+        */
+       
+        #div1{
+            border: 5px red solid;
+            height:100px;
+            width:100px;
+            text-align: center;
+            font-size: larger;
+            font-style: italic;
+            margin: 4px;
+            padding: 8px;
+            background-color: blue;
+            animation-name: vedant;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count:6;
+            animation-delay: 1s;
+            animation-timing:.ease-in-out;
+            
+
+
+        }
+        @keyframes vedant{
+            0%{height: 300px; width: 300px; color: skyblue; background-color: aqua; padding: 16px; margin: 8px;}  
+            25% {height: 400px; width: 400px; color: brown; background-color: blueviolet;}
+            50% { height: 50px; width: 300px; color: green; backgroundcolor}
+            75%  {widtbox   height: 100px;  text-aligncenter}   
+            100% {text-align: center; font-size: larger; font-weight: bolder; font-weight: lighter;}
+        }
+        
+        #div2{
+            border: 5px red solid;
+            height:100px;
+            width:100px;
+            text-align: center;
+            font-size: larger;
+            font-style: italic;
+            margin: 4px;
+            padding: 8px;
+            background-color: blue;
+            animation-name: vedant;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count:6;
+            animation-delay: 1s;
+            animation-timing:.ease-in-out;
+            
+
+
+        }
+        @keyframes vedant{
+            0%{height: 300px; width: 300px; color: skyblue; background-color: aqua; padding: 16px; margin: 8px;}  
+            25% {height: 400px; width: 400px; color: brown; background-color: blueviolet;}
+            50% { height: 50px; width: 300px; color: green; backgroundcolor}
+            75%  {widtbox   height: 100px;  text-aligncenter}   
+            100% {text-align: center; font-size: larger; font-weight: bolder; font-weight: lighter;}
+        }
+        #div3{
+            border: 3px aqua inset;
+            border-radius: 8px;
+            height:300px;
+            width: 400px;
+            font-size: large;
+            text-transform:  lowercase;
+            display: flex;
+            flex-direction:row;
+            transform: rotate(50deg);
+            transform-style: preserve-3d;
+            background-color: orchid;
+            animation-name: sammer;
+            animation-duration: 5s;
+            animation-iteration-count: 8;
+            animation-direction: alternate;
+            transition-property: all;
+            transition-duration: 6s;
+            transition-timing-function: ease-in;
+            
+        }
+        #div3:hover{ width: 600px;
+                     height: 600px;
+                      background-color: aqua;
+                      font-size: larger;
+                      text-transform: uppercase;
+                      color: green;
+
+        }
+        @keyframes sammer {
+            0% {width: 300px; height: 200px; background: red; color: blanchedalmond;}
+            50% {width: 100px; height: 100px; background-color: springgreen; color: green; }
+            100% {font-size: larger; font-style: italic; text-transform: uppercase;}
+        }
+        p{
+         
+            display:inline;
+            flex-direction: row;
+            height: 200px;
+            width: 200px;
+            border: 4px maroon inset;
+            text-transform: uppercase;
+            margin-top: 30px;
+            padding-top: 30px;
+            font-size: larger;
+            font-style: italic;
+            text-decoration: aqua;
+            animation-name: animation;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 4;
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: linear;
+            
+
+        }
+        p:active{
+            width: 100px;
+            height: 50px;
+            background-color: blueviolet;
+            text-shadow: 5px;
+        }
+        @keyframes  animation {
+            0%{width: 300px; height: 300px; } 
+            50% {height:400px; width: 400px;  border: 4px red solid; font-size: larger; text-transform: uppercase;}
+            100% {height: 500px; height: 500px; border: 5px blue dotted;}
+            
+        }

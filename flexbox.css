@@ -1,0 +1,198 @@
+/* Learn the flexbox tutorial in this web page 8/1/2024
+           container flex box ,,,,basically used the parent of the div  
+                  properties of the flexbox container  
+         1..flex-direction
+         2..flex-wrap
+         3..flex-flow
+         4..justify-content
+         5..align-content
+         6..align-item 
+           value of the flexbox container  ............
+           1..flex-direction
+                 *column
+                 *row
+                 *column -reverse
+                 *row -reverse
+        2..flex-wrap
+                *nowrap          {default}
+                *wrap
+                *wrap -reverse
+        3..flex-flow
+                *its is the {shorthand} of the [flex-direction & flex-wrap]                
+
+        4..justify content          { *yeh pura width  leta hai content ka  }
+                *center
+                *flex-start
+                *flex-end
+                *space around
+                *space between
+                *space evely
+        5..align-item               { *yeh jitna content  hai  bas uthna hi width leta hai }
+                *center
+                *flex-start
+                *flex-end
+                *stretch    {default}
+                *baseline
+        6..align-content
+                *space-between
+                *space-around
+                *stretch           {default}
+                *center
+                *flex-start
+                *flex-end 
+ 
+                 child item properties ............
+         1..order
+         2..flex-grow
+         3..flex-shrink
+         4..flex-basis
+         5..flex
+         6..align-self            * yeh pura width cover nhi karta hai jitna content hai bas uthna hi cover karta hai 
+
+           child item properties in there value  
+        1..order
+            *the properties is the used ,,,means kaun sa box kha pe hoga kis side,,,,1pe ,,2pe etc numbering karna.. boxes ka
+        2..flex-grow
+            *its is used the grow of the width in the single boxes..... 
+        3..flex-shrink
+            *the flex-shrink properties is used the specifies how much a flexitem will a shrink to the rest of item and {defaul value=1}
+        4..flex-basis
+            *the flex basis property specifies the Initial length of a flex item width,,,{max-width}&{min-width}
+        5..flex
+            *the flex property is the [shorthand] of the {flex-grow & flex-shrink & flex-basis}
+        6..align-self
+            *the align self property specifies the Alignment for the selected item Inside the flexible used the VERTICAL ALIGNMENT and like the {align-items}.....VALUE IS= *flex-end
+                                                  *flex-start
+                                                  *center            
+                                                  *stretch
+                                                  *baseline
+                                                  *auto
+            .........its used the single individuals box {only one box uses} .........                                      
+       Above the text all of them learn the flexbox easy then i am comment this the text because learn this tommarrow in the easy way 
+
+    */
+    .maindiv{
+        border: 5px maroon inset;
+        text-align: center;
+        margin: 10px;
+         display: flex;
+        flex-direction: row; 
+        height: 400px;
+         /* flex-direction: column; ......pura text column mai aa jayga
+        flex-direction: row-reverse;......pura row ulta ho jayega
+        flex-direction: column-reverse; 
+        
+        flex-wrap: nowrap;
+        flex-wrap: wrap-reverse; 
+        flex-flow:row; */
+        /* flex-wrap: wrap;
+        justify-content:center;
+        justify-content:left;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: safe;
+        justify-content: flex-start;
+        justify-content: flex-end; */
+
+        /* align-content: center;
+        align-content: flex-end;
+        align-content: flex-start; */
+        
+        align-items: end;
+        align-items: start;
+        align-items: flex-end;
+        align-items: flex-start;
+        align-items: baseline;
+        align-items: center;
+        order:1,5;
+       
+        
+    } 
+    #box1{
+        border: 5px red solid;
+        border-radius: 6px;
+        text-align:center;
+        text-transform: uppercase;
+        color:  black;
+        height:150px;
+        width: 150px;
+        margin: 20px;
+        padding: 20px;
+        outline: 5px;
+        order: 1;
+        order: initial;
+        align-self: center;
+        align-self: flex-start;
+
+             
+    }
+    #box2{
+        border: 5px rgb(15, 124, 226) solid;
+        border-radius: 6px;
+        text-align: center;
+        text-transform: uppercase;
+        color:  black;
+        height:150px;
+        width: 150px;
+        margin: 20px;
+        padding: 20px;
+        order:2;
+        flex-shrink: 5;
+        align-self:self-start;
+        align-self: flex-end;
+
+     
+    }
+    
+    #box3{
+        border: 5px rgb(68, 241, 0) solid;
+        border-radius: 6px;
+        text-align: center;
+        text-transform: uppercase;
+        color:  black;
+        height:150px;
+        width: 150px;
+        margin: 20px;
+        padding: 20px;
+        align-self: self-end;
+         
+    }
+    #box4{
+        border: 5px rgb(248, 1, 186) solid;
+        border-radius: 6px;
+        text-align: center;
+        text-transform: uppercase;
+        color:  black;
+        height:150px;
+        width: 150px;
+        margin: 20px;
+        padding: 20px;
+        align-self: self-start;
+        align-self: center;
+        align-self:initial;
+
+    }
+    #box5{
+        border: 5px rgba(255, 174, 0, 0.801) solid;
+        border-radius: 6px;
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+        height:150px;
+        width: 150px;
+        margin: 20px;
+        padding: 20px;
+    }
+    #box6{
+        border: 5px rgb(21, 5, 243) solid;
+        border-radius: 6px;
+        text-align: center;
+        text-transform: uppercase;
+        color:  black;
+        height:150px;
+        width: 150px;
+        margin: 20px;
+        padding: 20px;
+    }
+
+
